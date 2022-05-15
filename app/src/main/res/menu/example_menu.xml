@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/first_item"
+        android:icon="@drawable/ic_user"
+        android:title="item1"
+        app:showAsAction="ifRoom"
+
+        />
+    <item
+        android:id="@+id/menu"
+        app:showAsAction="never"
+        android:title="@string/delete_all"
+        />
+    <item
+        android:id="@+id/menu_2"
+        app:showAsAction="never"
+        android:title="@string/share"
+        />
+
+
+</menu>

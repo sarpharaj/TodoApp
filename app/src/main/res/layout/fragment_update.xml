@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.todo.UpdateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/update_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="142dp"
+        android:gravity="center"
+        android:text="@string/update_task"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/updateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:hint="@string/enter_title"
+        android:paddingStart="7dp"
+        android:layout_below="@+id/update_task"
+        android:paddingEnd="7dp"
+        android:paddingBottom="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/updateTextTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateTitle"
+        android:gravity="start"
+        android:hint="@string/enter_your_task"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:id="@+id/updatetextpriority"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateTextTaskDescription"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/priority"
+        android:textColor="@android:color/primary_text_light" />
+
+    <RadioGroup
+        android:id="@+id/updateRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/updatetextpriority"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/updateRadButton1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_box"
+            android:checked="true"
+            android:text="@string/high_priority"
+            android:textColor="@color/colorPrimaryDark"
+            android:theme="@style/WhiteRadioButton" />
+
+        <RadioButton
+            android:id="@+id/updateRadButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobox2"
+            android:text="@string/medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:theme="@style/WhiteRadioButton" />
+
+        <RadioButton
+            android:id="@+id/updateRadButton3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/box3"
+            android:text="@string/low"
+            android:textColor="@color/colorPrimaryDark"
+            android:theme="@style/WhiteRadioButton" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calen"
+        android:layout_below="@id/updateRadioGroup"
+        android:src="@drawable/ic_calendar"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calen"
+        android:id="@+id/updateDate"
+        />
+
+    <Button
+        android:id="@+id/updateButton"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/updateRadioGroup"
+        android:layout_gravity="center"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="@string/update_task"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>
